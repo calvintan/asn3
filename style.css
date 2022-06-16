@@ -1,0 +1,179 @@
+/* Header section */
+.header {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  height: 600px;
+  color: white;
+}
+
+
+/* Header > navbar section */
+.navbar {
+  padding: 30px 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin-top: 120px;
+}
+
+
+/* About section */
+.about {
+  padding: 60px 0;
+}
+
+.profile {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.social {
+  padding: 0;
+}
+
+.social li {
+  display: inline-block;
+}
+
+
+/* About > numbers section */
+.numbers {
+  margin-top: 60px;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.numbers h4 {
+  margin-bottom: 4px;
+}
+
+.numbers p {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+
+/* News section */
+.news {
+  padding: 60px 0;
+  background-color: #f1f1f1;
+}
+
+.news-item h2 a {
+  text-decoration: none;
+  color: grey;
+}
+
+.news-item h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  margin-bottom: 40px;
+}
+
+.news-item:last-of-type {
+  border-bottom: 1px solid #ccc;
+}
+
+.news-all {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  display: flex;
+}
+
+.news-all:after {
+  content: '';
+  background-image: url(images/icon-right.png);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+
+/* Contact section */
+.contact h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact {
+  padding: 80px 0;
+  background-image: url(images/contact.jpg);
+  background-size: cover;
+  color: white;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+select {
+  height: 48px;
+}
+
+input[type="submit"] {
+  background: black;
+  color: white;
+  text-transform: capitalize;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+
+/* Gallery section */
+.gallery {
+  padding: 80px 0;
+  background-color: black;
+}
+
+/* clearfix because of float */
+.gallery .container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gallery-item {
+  float: left;
+  width: 25%;
+  background: lightblue;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-item:first-of-type {
+  width: 50%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
